@@ -4,5 +4,11 @@
     "config:base",
     ":disableRateLimiting"
   ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["rector/rector", "phpstan/phpstan"],
+      "groupName": "rector and phpstan"
+    }
+  ],
   "rangeStrategy": "pin"
 }
